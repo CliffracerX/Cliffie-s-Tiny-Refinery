@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks> 
+    <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
+      <Id>
+        <TypeId>Refinery</TypeId>
+        <SubtypeId>TinyRefinery</SubtypeId>
+      </Id>
+      <DisplayName>Tiny Refinery</DisplayName>
+      <Icon>Textures\Icons\TinyRefinery.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\TinyRefin.mwm</Model>
+	  <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\TinyRefinConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\TinyRefinConstruction_2.mwm" />
+      </BuildProgressModels>
+      <Components>
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="Construction" Count="4" />
+        <Component Subtype="Display" Count="1" />
+        <Component Subtype="Computer" Count="5" />
+        <Component Subtype="SteelPlate" Count="25" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <BlockPairName>TinyRefinery</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>70</BuildTimeSeconds>
+      <InventoryMaxVolume>4</InventoryMaxVolume>
+      <InventorySize>
+        <X>2</X>
+        <Y>2</Y>
+        <Z>2</Z>
+      </InventorySize>
+      <StandbyPowerConsumption>0.002</StandbyPowerConsumption>
+      <OperationalPowerConsumption>0.02</OperationalPowerConsumption>
+      <BlueprintClasses>
+        <Class>Ingots</Class>
+      </BlueprintClasses>
+      <RefineSpeed>0.125</RefineSpeed>
+      <MaterialEfficiency>1</MaterialEfficiency>
+    </Definition>
+	<Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
+      <Id>
+        <TypeId>Assembler</TypeId>
+        <SubtypeId>TinyAssembler</SubtypeId>
+      </Id>
+      <DisplayName>Tiny Assembler</DisplayName>
+      <Icon>Textures\Icons\TinyAssembler.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\TinyAssem.mwm</Model>
+	  <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\TinyAssemConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\TinyAssemConstruction_2.mwm" />
+      </BuildProgressModels>
+      <Components>
+        <Component Subtype="SteelPlate" Count="15" />
+        <Component Subtype="Construction" Count="2" />
+        <Component Subtype="Display" Count="1" />
+        <Component Subtype="Computer" Count="2" />
+        <Component Subtype="SteelPlate" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>80</BuildTimeSeconds>
+      <InventoryMaxVolume>1</InventoryMaxVolume>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <StandbyPowerConsumption>0.002</StandbyPowerConsumption>
+      <OperationalPowerConsumption>0.02</OperationalPowerConsumption>
+      <BlueprintClasses>
+        <Class>LargeBlocks</Class>
+        <Class>SmallBlocks</Class>
+        <Class>Components</Class>
+        <Class>Tools</Class>
+      </BlueprintClasses>
+      <RefineSpeed>0.025</RefineSpeed>
+      <MaterialEfficiency>1</MaterialEfficiency>
+    </Definition>
+	</CubeBlocks>
+	</Definitions>
