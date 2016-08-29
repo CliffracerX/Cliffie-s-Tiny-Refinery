@@ -27,7 +27,7 @@
       <CriticalComponent Subtype="Computer" Index="0" />
       <BlockPairName>TinyRefinery</BlockPairName>
       <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>70</BuildTimeSeconds>
+      <BuildTimeSeconds>35</BuildTimeSeconds>
       <InventoryMaxVolume>4</InventoryMaxVolume>
       <InventorySize>
         <X>2</X>
@@ -35,11 +35,11 @@
         <Z>2</Z>
       </InventorySize>
       <StandbyPowerConsumption>0.002</StandbyPowerConsumption>
-      <OperationalPowerConsumption>0.02</OperationalPowerConsumption>
+      <OperationalPowerConsumption>0.03</OperationalPowerConsumption>
       <BlueprintClasses>
         <Class>Ingots</Class>
       </BlueprintClasses>
-      <RefineSpeed>0.125</RefineSpeed>
+      <RefineSpeed>0.0000284</RefineSpeed>
       <MaterialEfficiency>1</MaterialEfficiency>
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
@@ -67,7 +67,7 @@
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
       <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>80</BuildTimeSeconds>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
       <InventoryMaxVolume>1</InventoryMaxVolume>
       <InventorySize>
         <X>1</X>
@@ -75,14 +75,14 @@
         <Z>1</Z>
       </InventorySize>
       <StandbyPowerConsumption>0.002</StandbyPowerConsumption>
-      <OperationalPowerConsumption>0.02</OperationalPowerConsumption>
+      <OperationalPowerConsumption>0.05</OperationalPowerConsumption>
       <BlueprintClasses>
         <Class>LargeBlocks</Class>
         <Class>SmallBlocks</Class>
         <Class>Components</Class>
         <Class>Tools</Class>
       </BlueprintClasses>
-      <RefineSpeed>0.025</RefineSpeed>
+      <RefineSpeed>0.0000625</RefineSpeed>
       <MaterialEfficiency>1</MaterialEfficiency>
     </Definition>
 	</CubeBlocks>
